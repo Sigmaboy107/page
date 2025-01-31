@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Römer</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Die Römer – Geschichte & Kultur</h1>
+    <nav>
+        <ul>
+            <li><a href="#geschichte">Geschichte</a></li>
+            <li><a href="#legionen">Legionen</a></li>
+            <li><a href="#architektur">Architektur</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="geschichte">
+        <h2>Die Geschichte Roms</h2>
+        <p>Rom wurde der Legende nach 753 v. Chr. von Romulus gegründet. Über Jahrhunderte entwickelte sich das Römische Reich zu einer der mächtigsten Zivilisationen der Antike.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Roman_Empire_Trajan_117AD.png" alt="Karte des Römischen Reichs">
+    </section>
+
+    <section id="legionen">
+        <h2>Die römischen Legionen</h2>
+        <p>Die römische Armee war für ihre Disziplin und Organisation berühmt. Eine Legion bestand aus ca. 5.000 Soldaten.</p>
+    </section>
+
+    <section id="architektur">
+        <h2>Römische Architektur</h2>
+        <p>Die Römer bauten beeindruckende Gebäude wie das Kolosseum und das Pantheon. Sie nutzten Beton, Bögen und Aquädukte.</p>
+    </section>
+
+    <section id="quiz">
+        <h2>Römer-Quiz</h2>
+        <p>Teste dein Wissen über die Römer!</p>
+        <button onclick="startQuiz()">Start</button>
+        <div id="quiz-container" style="display:none;">
+            <p>Wann wurde Rom gegründet?</p>
+            <button onclick="checkAnswer(this, 'richtig')">753 v. Chr.</button>
+            <button onclick="checkAnswer(this, 'falsch')">500 v. Chr.</button>
+            <p id="quiz-result"></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Römer-Website | Erstellt von dir! 😊</p>
+</footer>
+
+</body>
+</html>
